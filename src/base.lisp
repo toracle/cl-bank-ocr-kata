@@ -1,3 +1,9 @@
+(defpackage #:bankocr
+  (:use #:cl)
+  (:export #:parse-digit))
+
+(in-package #:bankocr)
+
 (defvar *ocr-pattern-to-val* '(("   ~%  |~%  |~%   ~%" . 1)
                                (" _ ~% _|~%|_ ~%   ~%" . 2)
                                (" _ ~% _|~% _|~%   ~%" . 3)
