@@ -6,4 +6,5 @@
 (defsystem :cl-bankocr
   :version "1.0.0"
   :author "Jeongsoo Park"
-  :components ((:file "src/base")))
+  :components ((:module "src"
+                :components ((:file "base")))))
